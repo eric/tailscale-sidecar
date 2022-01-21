@@ -10,8 +10,13 @@ builds:
       - darwin
       - freebsd
     goarch:
+      - arm
       - amd64
       - arm64
+    goarm:
+      - 5
+      - 6
+      - 7
     ignore:
       - goos: windows
         goarch: arm64
