@@ -27,5 +27,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: imjasonh/setup-ko@v0.4
       - run: |
-          ko publish --bare --platform=linux/amd64,linux/arm64 \
+          ko publish --bare --platform=linux/amd64,linux/arm64,linux/arm/v5,linux/arm/v6,linux/arm/v7 \
           --tags=latest,$(git describe --tag --always --dirty) ./
